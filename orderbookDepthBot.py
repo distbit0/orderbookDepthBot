@@ -64,8 +64,6 @@ def getCoinDepthRatio(pair):
    orderbook = api.returnOrderBook(pair, depth=10000000)
    bidDepthRatio = getBidDepthRatio(orderbook)
    askDepthRatio = getAskDepthRatio(orderbook)
-   print(bidDepthRatio)
-   print(askDepthRatio)
    averageDepthRatio = askDepthRatio * bidDepthRatio
    return averageDepthRatio
    
